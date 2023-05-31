@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Box Design</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 10px;
+      }
+      .first-container {
+        width: 200px;
+        height: 200px;
+      }
+      .first-container > .box1,
+      .box2,
+      .box3,
+      .box4 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+      .first-container > .box1 {
+        background-color: red;
+        border-right: 0px;
+        border-bottom: 0px;
+        float: left;
+        clear: left;
+      }
+      .first-container > .box2 {
+        background-color: green;
+        float: right;
+      }
+      .first-container > .box3 {
+        background-color: blue;
+        float: left;
+        clear: left;
+      }
+      .first-container > .box4 {
+        background-color: yellow;
+        border-top: 0px;
+        border-left: 0px solid #000;
+        float: right;
+      }
+      .second-container{
+        margin-top:10px; 
+        width: 200px;
+        height: 200px;
+      }
+      .second-container>.box5{
+        background-color: aqua;
+        height: 200px;
+        width: 100px;
+        border: 1px solid;
+        float: left;
+        border-right: 0px;
+      }
+      .second-container>.sidebox{
+        width: 100px;
+        height: 200px;
+        float: right;
+        clear: right;
+        
+      }
+      .sidebox>.sidetop{
+        background-color: navajowhite;
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+
+      }
+      .sidebox>.sidedown{
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        border-top: 0px;
+
+      }
+      .third-container{
+        margin-top: 10px;
+        width: 200px;
+        height: 300px;
+       
+      }
+      .third-container>.box6,.box7{
+        
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+      .third-container>.box6{
+        background-color: purple;
+        float: left;
+    
+        
+      }
+      .third-container>.box7{
+        background-color:palegoldenrod;
+        float: right;
+        border-left: 0px;
+      }
+      .third-container>.box8{
+        background-color:peru;
+        width: 200px;
+        height: 100px;
+        border: 1px solid;
+        display:flex;
+        border-width: 0px 1px;
+      }
+      .third-container>.box9,.box10{
+        
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+        
+      .third-container>.box9{
+        background-color: pink;
+        float: left;
+    
+        
+      }
+      .third-container>.box10{
+        background-color: mediumvioletred;
+        float: right;
+        border-left: 0px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="first-container">
+      <div class="box1" title="box1" tabindex="1"></div>
+      <div class="box2" title="box2" tabindex="2"></div>
+      <div class="box3" title="box3" tabindex="3"></div>
+      <div class="box4" title="box4" tabindex="4"></div>
+    </div>
+    <div class="second-container">
+      <div class="box5" title="box5" tabindex="5"></div>
+      <div class="sidebox">
+        <div class="sidetop"></div>
+        <div class="sidedown"></div>
+    </div>
+    </div>
+    <div class="third-container">
+      <div class="box6" title="box6" tabindex="6"></div>
+      <div class="box7" title="box7" tabindex="7"></div>
+      <div class="box8" title="box8" tabindex="8"></div>
+      <div class="box9" title="box9" tabindex="9"></div>
+      <div class="box10" title="box10" tabindex="10"></div>
+
+
+    </div>
+  </body>
+</html>
